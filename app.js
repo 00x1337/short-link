@@ -11,7 +11,6 @@ require('dotenv').config()
 app.engine('blade.html', mustacheExpress());
 app.set('view engine', 'blade.html');
 app.use(bodyParser.json());
-const port = process.env.PORT || 3000;
 
 // Configure Sequelize to connect to the database
 
