@@ -5,19 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "npx nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/00x1337/short-link.git"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/00x1337/short-link/issues"
-  },
-  "homepage": "https://github.com/00x1337/short-link#readme",
+
   "dependencies": {
     "body-parser": "^1.20.1",
     "crypto": "^1.0.1",
