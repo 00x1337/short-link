@@ -11,6 +11,7 @@ require('dotenv').config()
 app.engine('blade.html', mustacheExpress());
 app.set('view engine', 'blade.html');
 app.use(bodyParser.json());
+const port = process.env.PORT || 3000;
 
 // Configure Sequelize to connect to the database
 
@@ -75,6 +76,6 @@ app.get('/:code', (req, res) => {
 });
 
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(port, () => {
     console.log('Server listening on port 3000');
 });
