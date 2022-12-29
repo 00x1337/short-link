@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_6.0.1/js/mdb.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="Semantic/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="Semantic/semantic.min.js"></script>
+    <link src="dark/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+        .container {
+            width: 85%;
+            padding: 10px;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1280px;
+            width: 90%;
+        }
+
+        .mt-5 {
+            margin-top: 3rem!important;
+        }
+        .border {
+            border: 1px solid rgba(0, 0, 0, 0.96) !important;
+            border-radius: 10px;
+        }
+    *,body,h1{
+        font-family: 'Almarai', sans-serif;
+    }
+    .toast {
+        border-radius: 2px;
+        top: 35px;
+        width: auto;
+        margin-top: 10px;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        min-height: 48px;
+        line-height: 1.5em;
+        background-color: #323232;
+        padding: 10px 25px;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        cursor: default;
+    }
+    #toast-container {
+        top: 10%;
+        right: 7%;
+        max-width: 86%;
+    }
+    #toast-container {
+        display: block;
+        position: fixed;
+        z-index: 10000;
+    }
+</style>
+<body>
+<div class="container mt-5 " style="background-color: #e7e7e7;border-radius: 15px">
+    <div class="container p-3">
+    <center style="padding: 10px;background-color: aquamarine;border-radius: 15px">
+        <h1 style="font-size: 50px; font-family: 'Almarai', sans-serif;">اختصار الروابط</h1>
+
+    </center>
+        <div id="full">
+        <div class="form-group">
+            <label >الرابط</label>
+            <input type="text" class="form-control" id="link" name="link" placeholder="ادخل الرابط">
+        </div>
+
+        <button type="submit" class="btn btn-primary " onclick="add()" style="background-color: aquamarine ; color: #000;width: 100%;">انشاء</button>
+        </div>
+        <footer class="bg-dark text-white mt-4 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4>About</h4>
+    <p>موقع ل اختصار الروابط</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Social</h4>
+                        <ul class="list-unstyled list-inline flex">
+                            <li class="list-inline-item"><a href="http://instagram.com/q1wy"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/00x1337"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <div class="col-md-12 text-center">
+                            <p>Copyright &copy; اختصار الروابط 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+<script>
+    async function add(){
+        // document.getElementById("btn-add").classList.remove("myNewClass");
+        // document.getElementById("btn-add").innerHTML = "Loading"
+        let data = await fetch("/add", {
+            method: "POST",
+            body: JSON.stringify({
+                link: document.getElementById("link").value,
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => res.json());
+        if(data.success){
+                document.getElementById('full').innerHTML = `<center>
+
+<div class="container" dir="rtl">
+<div>
+<center>
+
+</center>
+
+</div>
+                <br>
+                <h1>
+                الرابط:
+                </h1>
+                <br>
+                <a href="{{url}}`+ data.code + `" >
+                <h3 style="font-size: 20px">
+                <input type="hidden" id="url" value="{{url}} + `+data.code+`">
+                {{url}}` + data.code + `
+                </h3>
+                </a>
+                </div></center>`;
+
+            M.toast({html: 'تم انشاء الاختصار',style:"    background-color: #000;"})
+
+                // "document.getElementById("count_post).innerHTML =data.count +1;
+
+        }
+        if(data.msg){
+            M.toast({html: data.msg})
+        }
+    }
+</script>
+</body>
+</html>

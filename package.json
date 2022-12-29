@@ -1,0 +1,31 @@
+{
+  "name": "short-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00x1337/short-link.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00x1337/short-link/issues"
+  },
+  "homepage": "https://github.com/00x1337/short-link#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mustache-express": "^1.3.2",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.28.0",
+    "valid-url": "^1.0.9"
+  }
+}
